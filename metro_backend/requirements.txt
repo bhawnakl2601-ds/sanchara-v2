@@ -1,0 +1,15 @@
+# Runtime
+fastapi>=0.110
+uvicorn[standard]>=0.29
+# ML pipeline / predictor
+numpy>=1.26
+pandas>=2.1
+scikit-learn>=1.4
+joblib>=1.3
+openpyxl>=3.1          # reading the raw .xlsx datasets
+# Tests
+pytest>=8
+# Optional (only when the matching integration is configured; never required)
+# gtfs-realtime-bindings>=1.0   # BMRCL GTFS-RT feed, if/when credentials are granted
+# firebase-admin>=6.5           # FCM push delivery
+# sqlalchemy>=2.0 / psycopg[binary]   # PostgreSQL migration path

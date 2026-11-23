@@ -1,0 +1,8 @@
+const p = { width: 28, height: 28, viewBox: '0 0 28 28', fill: 'none', stroke: 'currentColor', strokeWidth: 1.2, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const, 'aria-hidden': true };
+export const IconRoute = () => <svg {...p}><circle cx="6" cy="22" r="2.5" /><circle cx="22" cy="6" r="2.5" /><path d="M8.5 22H17a4 4 0 0 0 0-8h-6a4 4 0 0 1 0-8h8.5" /></svg>;
+export const IconNetwork = () => <svg {...p}><circle cx="5" cy="8" r="2" /><circle cx="14" cy="14" r="2.5" /><circle cx="23" cy="6" r="2" /><circle cx="22" cy="22" r="2" /><circle cx="6" cy="22" r="2" /><path d="M6.6 9.4l5.5 3.4M16.3 12.7l5-5M15.8 15.6l5 4.8M12.2 15.6L7.5 20.4" /></svg>;
+export const IconSpark = () => <svg {...p}><path d="M14 3v6M14 19v6M3 14h6M19 14h6M7 7l3.5 3.5M17.5 17.5L21 21M21 7l-3.5 3.5M10.5 17.5L7 21" /></svg>;
+export const IconOrbit = () => <svg {...p}><ellipse cx="14" cy="14" rx="11" ry="5" transform="rotate(-25 14 14)" /><circle cx="14" cy="14" r="2.2" /></svg>;
+export const Arrow = ({ dir = 'right' }: { dir?: 'right' | 'left' }) => <svg width="22" height="14" viewBox="0 0 22 14" fill="none" stroke="currentColor" strokeWidth="1.2" aria-hidden style={dir === 'left' ? { transform: 'scaleX(-1)' } : undefined}><path d="M0 7h20M14 1l6 6-6 6" /></svg>;
+export const IconAlert = () => <svg {...p}><path d="M14 3.5 25 22.5H3L14 3.5Z" /><path d="M14 11v5.5" /><circle cx="14" cy="19.6" r=".9" fill="currentColor" /></svg>;
+export const IconGuide = () => <svg {...p}><rect x="5" y="3.5" width="18" height="15" rx="4" /><path d="M5 12.5h18M9.5 18.5l-2.5 4M18.5 18.5l2.5 4" /><circle cx="10" cy="15.5" r=".9" fill="currentColor" /><circle cx="18" cy="15.5" r=".9" fill="currentColor" /><path d="M9 7.5h10v2.5H9z" /></svg>;

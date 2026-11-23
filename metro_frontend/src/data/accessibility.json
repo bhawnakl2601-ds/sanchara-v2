@@ -1,0 +1,4 @@
+{
+  "_readme": "Facility-level accessibility records, keyed by station id. EMPTY ON PURPOSE: no verified lift/escalator/entrance data has been supplied, and none is invented. Add records only from a verified source, e.g. \"MJST\": {\"confidence\":\"verified\",\"lifts\":true,\"escalators\":true,\"stepFreeEntrance\":true,\"accessibleToilet\":null,\"tactilePaving\":null,\"audioAssistance\":null,\"source\":\"<url or note>\",\"verifiedOn\":\"YYYY-MM-DD\"}. null = unknown.",
+  "stations": {}
+}

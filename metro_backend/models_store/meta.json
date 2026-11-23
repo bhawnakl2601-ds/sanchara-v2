@@ -1,0 +1,256 @@
+{
+  "model_version": "crowd-rf-20261114-41360b",
+  "trained_utc": "2026-11-14T14:03:25+00:00",
+  "data_through": "2025-09-30",
+  "data_from": "2025-08-01",
+  "station_index": {
+    "AGPP": 0,
+    "APRC": 1,
+    "APTS": 2,
+    "BGUC": 3,
+    "BIET": 4,
+    "BMSD": 5,
+    "BRCS": 6,
+    "BSNK": 7,
+    "BSRD": 8,
+    "BTML": 9,
+    "BYPH": 10,
+    "CBPK": 11,
+    "CKBR": 12,
+    "CKPE": 13,
+    "CLGA": 14,
+    "DJNR": 15,
+    "DKIA": 16,
+    "DSH": 17,
+    "ECTN": 18,
+    "ETCT": 19,
+    "GDCP": 20,
+    "HBGI": 21,
+    "HLRU": 22,
+    "HOSR": 23,
+    "HSKR": 24,
+    "HSLI": 25,
+    "HSRL": 26,
+    "IDN": 27,
+    "ITPL": 28,
+    "JDHP": 29,
+    "JIDL": 30,
+    "JLHL": 31,
+    "JPN": 32,
+    "JTPM": 33,
+    "JYN": 34,
+    "KDGD": 35,
+    "KDNH": 36,
+    "KGIT": 37,
+    "KGWA": 38,
+    "KLPK": 39,
+    "KRAM": 40,
+    "KRMT": 41,
+    "KVPR": 42,
+    "LBGH": 43,
+    "MAGR": 44,
+    "MDVP": 45,
+    "MHLI": 46,
+    "MIRD": 47,
+    "MLSD": 48,
+    "MNJN": 49,
+    "MSRN": 50,
+    "MYRD": 51,
+    "NGSA": 52,
+    "NLC": 53,
+    "NYHM": 54,
+    "OFDC": 55,
+    "PATG": 56,
+    "PEYA": 57,
+    "PUTH": 58,
+    "PYID": 59,
+    "RGDT": 60,
+    "RJNR": 61,
+    "RRRN": 62,
+    "RVR": 63,
+    "SBJT": 64,
+    "SECE": 65,
+    "SPGD": 66,
+    "SPRU": 67,
+    "SSFY": 68,
+    "SSHP": 69,
+    "SVRD": 70,
+    "TGTP": 71,
+    "TTY": 72,
+    "UWVL": 73,
+    "VDHP": 74,
+    "VDSA": 75,
+    "VJN": 76,
+    "VJRH": 77,
+    "VSWA": 78,
+    "VWIA": 79,
+    "WHTM": 80,
+    "YPI": 81,
+    "YPM": 82
+  },
+  "features": [
+    "hour",
+    "dow",
+    "is_off_day",
+    "station_idx",
+    "hist_mean_sh_dt",
+    "hist_med_sh_dt",
+    "hist_max_station",
+    "hist_mean_sh_all",
+    "roll_last3_sh_dt"
+  ],
+  "rf_params": {
+    "n_estimators": 60,
+    "min_samples_leaf": 10,
+    "max_features": 0.6,
+    "n_jobs": 2,
+    "random_state": 42
+  },
+  "calibration": {
+    "entries": {
+      "q_lo": -0.21941089015534354,
+      "q_hi": 0.24543090688187075,
+      "n": 45816,
+      "nominal": 0.8
+    },
+    "exits": {
+      "q_lo": -0.21255486884336694,
+      "q_hi": 0.2896344816013534,
+      "n": 45816,
+      "nominal": 0.8
+    }
+  },
+  "coverage": {
+    "entries": {
+      "date_min": "2025-08-01",
+      "date_max": "2025-09-30",
+      "rows": 90925,
+      "station_days": 3845
+    },
+    "exits": {
+      "date_min": "2025-09-01",
+      "date_max": "2025-09-30",
+      "rows": 59760,
+      "station_days": 2490
+    }
+  },
+  "preprocessing": "backend/ml/preprocessing.py (partial 23:00-last-train intervals excluded)",
+  "validation": {
+    "entries": {
+      "baseline_same_hour_avg": {
+        "n": 17928,
+        "mae": 45.157012804737036,
+        "rmse": 90.73467628986405,
+        "wape": 0.12220205467070923,
+        "bias": -4.072835250177954,
+        "mape_ge50": 0.1470840531499185
+      },
+      "baseline_moving_avg_7": {
+        "n": 17928,
+        "mae": 46.70391619387603,
+        "rmse": 96.48790264066474,
+        "wape": 0.12638822113276624,
+        "bias": 1.7333009285820546,
+        "mape_ge50": 0.1499397017732347
+      },
+      "random_forest": {
+        "n": 17928,
+        "mae": 41.72882538675714,
+        "rmse": 90.8964830563583,
+        "wape": 0.11292483458343477,
+        "bias": -4.040537074880997,
+        "mape_ge50": 0.12668144336713097,
+        "interval80_coverage_raw_tree_percentiles": 0.6561244979919679,
+        "interval80_coverage": 0.820615796519411,
+        "interval80_mean_width": 178.4914332343643
+      },
+      "hist_gradient_boosting": {
+        "n": 17928,
+        "mae": 43.864591437455786,
+        "rmse": 94.29844142835563,
+        "wape": 0.11870455701148568,
+        "bias": -2.3732239036755427,
+        "mape_ge50": 0.1310812113134664
+      },
+      "random_forest_with_lag7_(horizon<=7d)": {
+        "n": 17928,
+        "mae": 39.87291357940335,
+        "rmse": 86.2187603113903,
+        "wape": 0.10790244222265241,
+        "bias": 1.6906198115337296,
+        "mape_ge50": 0.12318926644239675
+      }
+    },
+    "exits": {
+      "baseline_same_hour_avg": {
+        "n": 17928,
+        "mae": 45.7213669492786,
+        "rmse": 138.85128801687674,
+        "wape": 0.12409380083571674,
+        "bias": -2.9474267440130912,
+        "mape_ge50": 0.14200384071204894
+      },
+      "baseline_moving_avg_7": {
+        "n": 17928,
+        "mae": 46.45374885786532,
+        "rmse": 140.41185006711362,
+        "wape": 0.12608158162102584,
+        "bias": 2.83402127026625,
+        "mape_ge50": 0.14422847087656615
+      },
+      "random_forest": {
+        "n": 17928,
+        "mae": 43.76405433479671,
+        "rmse": 145.5694000109701,
+        "wape": 0.11878139707438116,
+        "bias": -0.6642593123355419,
+        "mape_ge50": 0.12658981192603674,
+        "interval80_coverage_raw_tree_percentiles": 0.6567380633645694,
+        "interval80_coverage": 0.854194556001785,
+        "interval80_mean_width": 221.61005196183984
+      },
+      "hist_gradient_boosting": {
+        "n": 17928,
+        "mae": 42.79585807938948,
+        "rmse": 141.78575888595037,
+        "wape": 0.11615358514956103,
+        "bias": 0.41794062983595154,
+        "mape_ge50": 0.12680163031988212
+      },
+      "random_forest_with_lag7_(horizon<=7d)": {
+        "n": 17928,
+        "mae": 42.19743822542218,
+        "rmse": 140.76951447516944,
+        "wape": 0.11452939499232585,
+        "bias": 5.780632172605754,
+        "mape_ge50": 0.12368166238593202
+      }
+    }
+  },
+  "training_environment": {
+    "python": "3.13.18",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scikit_learn": "1.9.1"
+  },
+  "limitations": [
+    "Predicts hourly station ENTRY/EXIT counts from only Aug 1-18 and Sep 1-30 2025; no data for 19-31 Aug.",
+    "August has a single series that is INFERRED to be entries (source does not label it).",
+    "Not live occupancy and not coach crowding.",
+    "No event, weather or disruption data; not validated for festivals, emergencies or disruptions.",
+    "Only 15 Aug 2025 is flagged as a holiday."
+  ],
+  "format_version": 2,
+  "checksums": {
+    "forest_entries.npz": "2b08bff6f0d6f20e",
+    "forest_exits.npz": "e84c839bc82e16db",
+    "tables/frozen_entries_sh_all.csv": "fbc7f2605991af71",
+    "tables/frozen_entries_sh_dt.csv": "ae5541495bb30490",
+    "tables/frozen_entries_smax.csv": "8e0967e0b03dda04",
+    "tables/frozen_exits_sh_all.csv": "a97c6da6b94e4f61",
+    "tables/frozen_exits_sh_dt.csv": "28b7859969cbca86",
+    "tables/frozen_exits_smax.csv": "39053edb8a48e714",
+    "tables/profiles.csv": "802207e20a42a205",
+    "tables/thresholds.csv": "bdf815a66cc881da"
+  }
+}

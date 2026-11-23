@@ -1,0 +1,84 @@
+hourly_station,hourly_id,matrix_code,official_name,hourly_name,name_similarity,sanchara_id,display_name,kn,lines,lat,lon,code_aliases,mapped_by
+11-Baiyappanahalli,11,BYPH,Baiyappanahalli,Baiyappanahalli,1.0,BYPH,Baiyappanahalli,ಬೈಯ್ಯಪ್ಪನಹಳ್ಳಿ ಮೆಟ್ರೋ ನಿಲ್ದಾಣ,PURPLE,12.990759,77.65236,,order+name
+12-SV Road,12,SVRD,Swami Vivekananda Road,SV Road,1.0,SVRD,Swami Vivekananda Road,ಸ್ವಾಮಿ ವಿವೇಕಾನಂದ ರಸ್ತೆ,PURPLE,12.985931,77.6449,,order+name
+13-Indiranagar,13,IDN,Indiranagar,Indiranagar,1.0,IDN,Indiranagar,ಇಂದಿರಾನಗರ,PURPLE,12.978333,77.638664,,order+name
+14-Halasuru,14,HLRU,Halasuru,Halasuru,1.0,HLRU,Halasuru,ಹಲಸೂರು,PURPLE,12.976499,77.626686,,order+name
+15-Trinity,15,TTY,Trinity,Trinity,1.0,TTY,Trinity,ಟ್ರಿನಿಟಿ ಮೆಟ್ರೊ ನಿಲ್ದಾಣ,PURPLE,12.973022,77.61702,,order+name
+16-MG Road,16,MGRD,Mahatma Gandhi Road,MG Road,1.0,MAGR,Mahatma Gandhi Road,ಮಹಾತ್ಮ ಗಾಂಧಿ ರಸ್ತೆ,PURPLE,12.975526,77.60679,MAGR,order+name
+17-Cubbon Park,17,CBPK,Cubbon Park,Cubbon Park,1.0,CBPK,Cubbon Park,ಕಬ್ಬನ್ ಪಾರ್ಕ್,PURPLE,12.980958,77.59757,,order+name
+18-Vidhana Soudha,18,VDSA,"Dr. B. R. Ambedkar Station, Vidhana Soudha",Vidhana Soudha,0.58,VDSA,"Dr. B. R. Ambedkar Station, Vidhana Soudha","ಡಾ.ಬಿ.ಆರ್. ಅಂಬೇಡ್ಕರ್ ಠಾಣೆ, ವಿಧಾನಸೌಧ",PURPLE,12.978742,77.59164,,order+name
+19-Sir.M. Visveshwaraya,19,VSWA,"Sir M. Visvesvaraya Stn., Central College",Sir.M. Visveshwaraya,0.6,VSWA,"Sir M. Visvesvaraya Stn., Central College",ಸರ್ ಎಂ ವಿಶ್ವೇಶ್ವರಯ್ಯ - ಸೆಂಟ್ರಲ್ ಕಾಲೇಜು,PURPLE,12.97452,77.58422,,order+name
+110-Kempegowda,110,KGWA,"Nadaprabhu Kempegowda Station, Majestic",Kempegowda,0.44,KGWA,"Nadaprabhu Kempegowda Station, Majestic","ನಾಡಪ್ರಭು ಕೆಂಪೇಗೌಡ ನಿಲ್ದಾಣ, ಮೆಜೆಸ್ಟಿಕ್","GREEN,PURPLE",12.975708,77.572876,,order+name
+111-KSR Railway Station,111,BRCS,Krantivira Sangolli Rayanna Railway Station,KSR Railway Station,0.61,BRCS,Krantivira Sangolli Rayanna Railway Station,ಕ್ರಾಂತಿವೀರ ಸಂಗೊಳ್ಳಿ ರಾಯಣ್ಣ,PURPLE,12.975877,77.56538,,order+name
+112-Magadi Road,112,MIRD,Magadi Road,Magadi Road,1.0,MIRD,Magadi Road,ಮಾಗಡಿ ರಸ್ತೆ ಮೆಟ್ರೊ,PURPLE,12.975632,77.55535,,order+name
+113-Hosahalli,113,HSLI,"Sri Balagangadharanatha Swamiji Station, Hosahalli",Hosahalli,0.33,HSLI,"Sri Balagangadharanatha Swamiji Station, Hosahalli",ಶ್ರೀ ಬಾಲಗಂಗಾಧರನಾಥ ಮೆಟ್ರೋ,PURPLE,12.974293,77.54562,,order+name
+114-Vijayanagar,114,VJNR,Vijayanagar,Vijayanagar,1.0,VJN,Vijayanagar,ವಿಜಯನಗರ,PURPLE,12.970956,77.53741,VJN,order+name
+115-Attiguppe,115,AGPP,Attiguppe,Attiguppe,1.0,AGPP,Attiguppe,ಅತ್ತಿಗುಪ್ಪೆ ಮೆಟ್ರೋ,PURPLE,12.961893,77.53358,,order+name
+116-Deepanjali Nagar,116,DJNR,Deepanjali Nagar,Deepanjali Nagar,1.0,DJNR,Deepanjali Nagar,ದೀಪಾಂಜಲಿ ನಗರ,PURPLE,12.952058,77.53701,,order+name
+117-Mysuru Road,117,MYRD,Mysore Road,Mysuru Road,0.8,MYRD,Mysore Road,ಮೈಸೂರು ರಸ್ತೆ ಮೆಟ್ರೋ,PURPLE,12.946718,77.53016,,order+name
+118-Nayandahalli,118,NYHM,Pantharapalya - Nayandahalli,Nayandahalli,0.65,NYHM,Pantharapalya - Nayandahalli,ಪಂತರಪಾಳ್ಯ - ನಾಯಂಡಹಳ್ಳಿ,PURPLE,12.941671,77.525116,,order+name
+119-Rajarajeshwari Nagar,119,RRRN,Rajarajeshwari Nagar,Rajarajeshwari Nagar,1.0,RRRN,Rajarajeshwari Nagar,ರಾಜರಾಜೇಶ್ವರಿ ನಗರ,PURPLE,12.9366,77.51968,,order+name
+120-Jnanabharathi,120,BGUC,Jnanabharathi,Jnanabharathi,1.0,BGUC,Jnanabharathi,ಜ್ಞಾನ ಭಾರತಿ,PURPLE,12.935436,77.512405,,order+name
+121-Pattangere,121,PATC,Pattanagere,Pattangere,0.95,PATG,Pattanagere,ಪಟ್ಟಣಗೆರೆ,PURPLE,12.92425,77.49835,PATG,order+name
+122-Kengeri Bus Terminal,122,MLSD,Kengeri Bus Terminal,Kengeri Bus Terminal,1.0,MLSD,Kengeri Bus Terminal,ಕೆಂಗೇರಿ ಬಸ್ ಟರ್ಮಿನಲ್,PURPLE,12.914689,77.487854,,order+name
+123-Kengeri,123,KGIT,Kengeri,Kengeri,1.0,KGIT,Kengeri,ಕೆಂಗೇರಿ,PURPLE,12.90791,77.47658,,order+name
+124-Challaghatta,124,CLG,Challaghatta,Challaghatta,1.0,CLGA,Challaghatta,ಚಲ್ಲಘಟ್ಟ,PURPLE,12.897354,77.46129,"CLGA,CLGT",order+name
+125-Benniganahalli,125,JTPM,Benniganahalli,Benniganahalli,1.0,JTPM,Benniganahalli,ಬೆನ್ನಿಗಾನಹಳ್ಳಿ,PURPLE,12.996516,77.668465,,order+name
+126-Krishnarajapura,126,KRMA,Krishnarajapura,Krishnarajapura,1.0,KRAM,Krishnarajapura,ಕೃಷ್ಣರಾಜಪುರ (ಕೆ.ಆರ್.ಪುರ),PURPLE,12.999902,77.67767,KRPM,order+name
+127-Singayyanapalya,127,MDVP,Singayyanapalya,Singayyanapalya,1.0,MDVP,Singayyanapalya,ಸಿಂಗಯ್ಯನಪಾಳ್ಯ,PURPLE,12.996545,77.69272,,order+name
+128-Garudacharpalya,128,GDCP,Garudacharpalya,Garudacharpalya,1.0,GDCP,Garudacharpalya,ಗರುಡಾಚಾರ್ ಪಾಳ್ಯ,PURPLE,12.99345,77.703674,,order+name
+129-Hoodi,129,DKIA,Hoodi,Hoodi,1.0,DKIA,Hoodi,ಹೂಡಿ,PURPLE,12.988803,77.71133,,order+name
+130-Seetharampalya,130,VWIA,Seetharampalya,Seetharampalya,1.0,VWIA,Seetharampalya,ಸೀತಾರಾಮ ಪಾಳ್ಯ,PURPLE,12.980856,77.708786,,order+name
+131-Kundalahalli,131,KDNH,Kundalahalli,Kundalahalli,1.0,KDNH,Kundalahalli,ಕುಂದಲಹಳ್ಳಿ,PURPLE,12.977594,77.71556,,order+name
+132-Nallur Halli,132,VDHP,Nallurahalli,Nallur Halli,0.96,VDHP,Nallurahalli,ನಲ್ಲೂರಹಳ್ಳಿ,PURPLE,12.976641,77.724884,,order+name
+133-Sri Sathya Sai Hospital,133,SSHP,Sri Sathya Sai Hospital,Sri Sathya Sai Hospital,1.0,SSHP,Sri Sathya Sai Hospital,ಶ್ರೀ ಸತ್ಯ ಸಾಯಿ ಆಸ್ಪತ್ರೆ,PURPLE,12.981195,77.72754,,order+name
+134-Pattandur Agrahara,134,ITPL,Pattandur Agrahara,Pattandur Agrahara,1.0,ITPL,Pattandur Agrahara,ಪಟ್ಟಂದೂರು ಅಗ್ರಹಾರ,PURPLE,12.987639,77.73777,,order+name
+135-Kadugodi Tree Park,135,KDGD,Kadugodi Tree Park,Kadugodi Tree Park,1.0,KDGD,Kadugodi Tree Park,ಕಾಡುಗೋಡಿ ಟ್ರೀ ಪಾರ್ಕ್,PURPLE,12.98565,77.74701,,order+name
+136-Hopefarm Channasandra,136,UWVL,Hopefarm Channasandra,Hopefarm Channasandra,1.0,UWVL,Hopefarm Channasandra,ಹೋಪ್ ಫಾರ್ಮ್ ಚನ್ನಸಂದ್ರ,PURPLE,12.987343,77.7538,,order+name
+137-Whitefield (Kadugodi),137,WHTM,Whitefield (Kadugodi),Whitefield (Kadugodi),1.0,WHTM,Whitefield (Kadugodi),ವೈಟ್‌ಫೀಲ್ಡ್ (ಕಾಡುಗೋಡಿ),PURPLE,12.995743,77.75795,,order+name
+21-Nagasandra,21,NGSA,Nagasandra,Nagasandra,1.0,NGSA,Nagasandra,ನಾಗಸಂದ್ರ,GREEN,13.047954,77.500145,,order+name
+22-Dasarahalli,22,DSH,Dasarahalli,Dasarahalli,1.0,DSH,Dasarahalli,ದಾಸರಹಳ್ಳಿ,GREEN,13.043261,77.51255,,order+name
+23-Jalahalli,23,JHLI,Jalahalli,Jalahalli,1.0,JLHL,Jalahalli,ಜಾಲಹಳ್ಳಿ,GREEN,13.03941,77.51974,JLHL,order+name
+24-Peenya Industry,24,PYID,Peenya Industry,Peenya Industry,1.0,PYID,Peenya Industry,ಪೀಣ್ಯ ಇಂಡಸ್ಟ್ರಿ,GREEN,13.036318,77.52549,,order+name
+25-Peenya,25,PEYA,Peenya,Peenya,1.0,PEYA,Peenya,ಪೀಣ್ಯ,GREEN,13.033019,77.5332,,order+name
+26-Yeshwanthpur Industry,26,YPI,Goraguntepalya,Yeshwanthpur Industry,0.29,YPI,Goraguntepalya,ಗೊರಗುಂಟೆಪಾಳ್ಯ,GREEN,13.028332,77.54085,,order+name
+27-Yeshwanthpur,27,YPM,Yeshwantpur,Yeshwanthpur,0.96,YPM,Yeshwantpur,ಯಶವಂತಪುರ,GREEN,13.023268,77.54987,,order+name
+28-Sandal Soap Factory,28,SSFY,Sandal Soap Factory,Sandal Soap Factory,1.0,SSFY,Sandal Soap Factory,ಸಾಂಡಲ್ ಸೋಪ್ ಕಾರ್ಖಾನೆ,GREEN,13.014654,77.553986,,order+name
+29-Mahalakshmi,29,MHLI,Mahalakshmi,Mahalakshmi,1.0,MHLI,Mahalakshmi,ಮಹಾಲಕ್ಷ್ಮಿ,GREEN,13.008047,77.548805,,order+name
+210-Rajajinagar,210,RJNR,Rajajinagar,Rajajinagar,1.0,RJNR,Rajajinagar,ರಾಜಾಜಿನಗರ,GREEN,13.000525,77.54966,,order+name
+211-Kuvempu Road,211,KVPR,Mahakavi Kuvempu Road,Kuvempu Road,0.73,KVPR,Mahakavi Kuvempu Road,ಮಹಾಕವಿ ಕುವೆಂಪು ರಸ್ತೆ,GREEN,12.99853,77.5569,,order+name
+212-Srirampura,212,SPRU,Srirampura,Srirampura,1.0,SPRU,Srirampura,ಶ್ರೀರಾಮಪುರ,GREEN,12.996525,77.563194,,order+name
+213-Mantri Square Sampige Road,213,SPGD,Mantri Square Sampige Road,Mantri Square Sampige Road,1.0,SPGD,Mantri Square Sampige Road,ಮಂತ್ರಿ ಸ್ಕ್ವೇರ್ ಸಂಪಿಗೆ ರಸ್ತೆ,GREEN,12.990463,77.57073,,order+name
+215-Chickpete,215,CHPK,Chickpete,Chickpete,1.0,CKPE,Chickpete,ಚಿಕ್ಕಪೇಟೆ,GREEN,12.966897,77.574554,CKPE,order+name
+216-KR Market,216,KRMT,Krishna Rajendra Market,KR Market,0.55,KRMT,Krishna Rajendra Market,ಕೃಷ್ಣರಾಜೇಂದ್ರ ಮಾರುಕಟ್ಟೆ,GREEN,12.960879,77.57466,,order+name
+217-National College,217,NLC,National College,National College,1.0,NLC,National College,ನ್ಯಾಶನಲ್ ಕಾಲೇಜು,GREEN,12.950527,77.57369,,order+name
+218-Lalbagh,218,LAGH,Lalbagh,Lalbagh,1.0,LBGH,Lalbagh,ಲಾಲ್ ಬಾಗ್,GREEN,12.946526,77.58002,LBGH,order+name
+219-South End Circle,219,SECE,South End Circle,South End Circle,1.0,SECE,South End Circle,ತಿ.ನಂ.ಶ್ರೀ ವೃತ್ತ,GREEN,12.938257,77.580055,,order+name
+220-Jayanagar,220,JAYN,Jayanagar,Jayanagar,1.0,JYN,Jayanagar,ಜಯನಗರ,GREEN,12.929507,77.58015,JYN,order+name
+221-RV Road,221,RVRD,Rashtreeya Vidyalaya Road,RV Road,1.0,RVR,Rashtreeya Vidyalaya Road,ರಾಷ್ಟ್ರೀಯ ವಿದ್ಯಾಲಯ ರಸ್ತೆ,"GREEN,YELLOW",12.921581,77.5802,RVR,order+name
+222-Banashankarl,222,BNSK,Banashankari,Banashankarl,0.92,BSNK,Banashankari,ಬನಶಂಕರಿ,GREEN,12.915221,77.5736,BSNK,order+name
+223-JP Nagar,223,JPN,Jaya Prakash Nagar,JP Nagar,0.61,JPN,Jaya Prakash Nagar,ಜೆಪಿ ನಗರ,GREEN,12.907475,77.57313,,order+name
+224-Puttenahalli,224,PUTH,Yelachenahalli,Puttenahalli,1.0,PUTH,Yelachenahalli,ಯಲಚೇನಹಳ್ಳಿ,GREEN,12.89605,77.57012,,order+name
+225-Konanakunte Cross,225,APRC,Konanakunte Cross,Konanakunte Cross,1.0,APRC,Konanakunte Cross,ಕೋಣನಕುಂಟೆ ಕ್ರಾಸ್,GREEN,12.888967,77.56267,,order+name
+226-Doddakallasandra,226,KLPK,Doddakallasandra,Doddakallasandra,1.0,KLPK,Doddakallasandra,ದೊಡ್ಡಕಲ್ಲಸಂದ್ರ,GREEN,12.884643,77.55276,,order+name
+227-Vajarahalli,227,VJRH,Vajarahalli,Vajarahalli,1.0,VJRH,Vajarahalli,ವಾಜರಹಳ್ಳಿ,GREEN,12.877437,77.54474,,order+name
+228-Thalghattapura,228,TGTP,Thalaghattapura,Thalghattapura,0.97,TGTP,Thalaghattapura,ತಲಘಟ್ಟಪುರ,GREEN,12.87141,77.5384,,order+name
+229-Silk Institute,229,APTS,Silk Institute,Silk Institute,1.0,APTS,Silk Institute,ರೇಷ್ಮೆ ಸಂಸ್ಥೆ,GREEN,12.86173,77.52995,,order+name
+230-Manjunatha Nagar,230,MNJN,Manjunathanagara,Manjunatha Nagar,0.97,MNJN,Manjunathanagara,ಮಂಜುನಾಥನಗರ,GREEN,13.05009,77.494446,,order+name
+231-Chikkabidarakallu,231,JIDL,Chikkabidarakallu,Chikkabidarakallu,1.0,JIDL,Chikkabidarakallu,ಚಿಕ್ಕಬಿದರಕಲ್ಲು,GREEN,13.052362,77.487915,,order+name
+232-Madavara,232,BIET,Madavara,Madavara,1.0,BIET,Madavara,ಮದವರ,GREEN,13.057421,77.47281,,order+name
+31-Ragigudda,31,RGDT,Ragigudda,Ragigudda,1.0,RGDT,Ragigudda,ರಾಗಿಗುಡ್ಡ,YELLOW,12.917081,77.5883,,order+name
+32-Jayadeva Hospital,32,JDHP,Jayadeva Hospital,Jayadeva Hospital,1.0,JDHP,Jayadeva Hospital,ಜಯದೇವ ಆಸ್ಪತ್ರೆ,YELLOW,12.916731,77.59997,,order+name
+33-BTM Layout,33,BTML,BTM Layout,BTM Layout,1.0,BTML,BTM Layout,ಬಿಟಿಎಂ ಬಡಾವಣೆ,YELLOW,12.916588,77.608116,,order+name
+34-Central Silk Board,34,SBJT,Central Silk Board,Central Silk Board,1.0,SBJT,Central Silk Board,ಸೆಂಟ್ರಲ್ ಸಿಲ್ಕ ಬೋರ್ಡ್,YELLOW,12.916582,77.62057,,order+name
+35-Bommanahalli,35,HSRL,Bommanahalli,Bommanahalli,1.0,HSRL,Bommanahalli,ಬೊಮ್ಮನಹಳ್ಳಿ,YELLOW,12.910616,77.62648,,order+name
+36-Hongasandra,36,OFDC,Hongasandra,Hongasandra,1.0,OFDC,Hongasandra,ಹೊಂಗಸಂದ್ರ,YELLOW,12.901695,77.63199,,order+name
+37-Kudlu Gate,37,MSRN,Kudlu Gate,Kudlu Gate,1.0,MSRN,Kudlu Gate,ಕುಡ್ಲು ಗೇಟ್,YELLOW,12.889926,77.63921,,order+name
+38-Singasandra,38,CKBR,Singasandra,Singasandra,1.0,CKBR,Singasandra,ಸಿಂಗಸಂದ್ರ,YELLOW,12.880818,77.644844,,order+name
+39-Hosa Road,39,BSRD,Hosa Road,Hosa Road,1.0,BSRD,Hosa Road,ಹೊಸ ರಸ್ತೆ,YELLOW,12.870749,77.65245,,order+name
+310-Beratena Agrahara,310,HOSR,Beratena Agrahara,Beratena Agrahara,1.0,HOSR,Beratena Agrahara,ಬೆರಟೇನ ಅಗ್ರಹಾರ,YELLOW,12.863867,77.65786,,order+name
+311-Electronic City,311,ETCT,Electronic City,Electronic City,1.0,ETCT,Electronic City,ಎಲೆಕ್ಟ್ರಾನಿಕ್ ಸಿಟಿ,YELLOW,12.856505,77.66352,,order+name
+312-Infosys Foundation Konappana Agrahara,312,ECTN,Infosys Foundation Konappana Agrahara,Infosys Foundation Konappana Agrahara,1.0,ECTN,Infosys Foundation Konappana Agrahara,ಇನ್ಫೋಸಿಸ್ ಫೌಂಡೇಶನ್ ಕೊನಪ್ಪನ ಅಗ್ರಹಾರ,YELLOW,12.846413,77.671165,,order+name
+313-Huskur Road,313,HSKR,Huskur Road,Huskur Road,1.0,HSKR,Huskur Road,ಹುಸ್ಕೂರು ರಸ್ತೆ,YELLOW,12.839157,77.677376,,order+name
+314-Biocon Hebbagodi,314,HBGI,Biocon Hebbagodi,Biocon Hebbagodi,1.0,HBGI,Biocon Hebbagodi,ಬಯೋಕಾನ್ ಹೆಬ್ಬಗೋಡಿ,YELLOW,12.829033,77.68137,,order+name
+315-Delta Electronics Bommasandra,315,BMSD,Delta Electronics Bommasandra,Delta Electronics Bommasandra,1.0,BMSD,Delta Electronics Bommasandra,ಡೆಲ್ಟಾ ಎಲೆಕ್ಟ್ರಾನಿಕ್ಸ್ ಬೊಮ್ಮಸಂದ್ರ,YELLOW,12.819394,77.68835,,order+name
