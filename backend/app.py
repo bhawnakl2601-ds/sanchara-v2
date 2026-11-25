@@ -1,5 +1,9 @@
 import os
 import json
+import time
+import uuid
+
+from backend.ai.gemini_service import generate_response
 from flask import Flask, request, jsonify, send_from_directory, redirect
 from flask_cors import CORS
 
@@ -15,7 +19,10 @@ from backend.metro_bridge import register_metro
 
 app = Flask(__name__, static_folder=FRONTEND_DIR)
 CORS(app)
-
+# Travel Guide conversation storage
+conversation_sessions = {}
+trip_destinations = {}
+MAX_HISTORY_MESSAGES = 12
 # Start the METRO engine and mount its API at /metro-api/...  (see backend/metro_bridge.py)
 register_metro(app)
 
@@ -379,6 +386,177 @@ def get_admin_metrics():
         "total_complaints_count": len(complaints),
         "pending_complaints_count": sum(1 for c in complaints if c.get('status') == 'Under Review')
     })
+
+
+# ==========================================
+# TRAVEL GUIDE - GEMINI CHATBOT API
+# ==========================================
+
+@app.route('/api/new-conversation', methods=['POST'])
+def new_conversation():
+    conversation_id = str(uuid.uuid4())
+    conversation_sessions[conversation_id] = []
+    trip_destinations[conversation_id] = []
+
+    return jsonify({
+        "status": "success",
+        "conversation_id": conversation_id,
+        "message": "New conversation started!"
+    })
+
+
+@app.route('/api/chat', methods=['POST'])
+def chat():
+    try:
+        data = request.get_json(silent=True) or {}
+        user_message = data.get("message", "").strip()
+
+        if not user_message:
+            return jsonify({"error": "Message cannot be empty"}), 400
+
+        conversation_id = data.get("conversation_id")
+
+        if not isinstance(conversation_id, str) or not conversation_id:
+            conversation_id = str(uuid.uuid4())
+
+        history = conversation_sessions.get(conversation_id, [])
+
+        start = time.time()
+        bot_response = generate_response(user_message, history)
+        print(f"Gemini took {time.time() - start:.2f}s")
+
+        if (
+            bot_response
+            and not bot_response.startswith(
+                "I'm experiencing a little difficulty"
+            )
+        ):
+            history.extend([
+                {"role": "user", "content": user_message},
+                {"role": "model", "content": bot_response}
+            ])
+            history = history[-MAX_HISTORY_MESSAGES:]
+            conversation_sessions[conversation_id] = history
+
+        return jsonify({
+            "reply": bot_response,
+            "conversation_id": conversation_id
+        })
+
+    except Exception as e:
+        print("Chat error:", str(e))
+        return jsonify({
+            "error": "Sorry, something went wrong. Please try again."
+        }), 500
+
+
+@app.route('/api/add-to-trip', methods=['POST'])
+def add_to_trip():
+    try:
+        data = request.get_json(silent=True) or {}
+        destination = data.get("destination", "").strip()
+        description = data.get("description", "").strip()
+        conversation_id = data.get("conversation_id")
+
+        if not destination:
+            return jsonify({"error": "Destination name is required."}), 400
+
+        if not isinstance(conversation_id, str) or not conversation_id:
+            return jsonify({"error": "A valid conversation ID is required."}), 400
+
+        history = conversation_sessions.get(conversation_id, [])
+        selected_destinations = trip_destinations.get(conversation_id, [])
+
+        if any(item.casefold() == destination.casefold()
+               for item in selected_destinations):
+            return jsonify({
+                "status": "success",
+                "duplicate": True,
+                "destination": destination,
+                "destinations": selected_destinations,
+                "reply": f"{destination} is already in your trip!"
+            })
+
+        updated_destinations = selected_destinations + [destination]
+        destination_details = "\n".join(
+            f"- {item}" for item in updated_destinations
+        )
+
+        new_description = (
+            f"\nDescription: {description}" if description else ""
+        )
+
+        trip_instruction = f"""
+The user has clicked the Add to Trip button.
+This is an automatic trip-planning action. Do not ask for confirmation.
+
+New destination selected:
+{destination}{new_description}
+
+All destinations selected for this trip so far:
+{destination_details}
+
+Update the existing itinerary if one exists, preserving the user's
+preferences and destinations. Otherwise create a personalised itinerary
+covering all selected destinations. Arrange them in a sensible order.
+Avoid repeating places. Provide a complete updated itinerary.
+Do not invent exact opening hours, ticket prices or travel times.
+Respond naturally as SANCHARA.
+"""
+
+        start = time.time()
+        bot_response = generate_response(trip_instruction, history)
+        print(f"Trip update took {time.time() - start:.2f}s")
+
+        if (
+            not bot_response
+            or bot_response.startswith(
+                "I'm experiencing a little difficulty"
+            )
+        ):
+            return jsonify({
+                "error": "SANCHARA could not update your itinerary. Please try again."
+            }), 503
+
+        history.extend([
+            {"role": "user", "content": trip_instruction},
+            {"role": "model", "content": bot_response}
+        ])
+        history = history[-MAX_HISTORY_MESSAGES:]
+
+        conversation_sessions[conversation_id] = history
+        trip_destinations[conversation_id] = updated_destinations
+
+        return jsonify({
+            "status": "success",
+            "duplicate": False,
+            "destination": destination,
+            "destinations": updated_destinations,
+            "reply": bot_response,
+            "conversation_id": conversation_id
+        })
+
+    except Exception as e:
+        print("Add to trip error:", str(e))
+        return jsonify({
+            "error": "Something went wrong while updating your trip."
+        }), 500
+
+
+@app.route('/api/clear-conversation', methods=['POST'])
+def clear_conversation():
+    data = request.get_json(silent=True) or {}
+    conversation_id = data.get("conversation_id")
+
+    if conversation_id:
+        conversation_sessions.pop(conversation_id, None)
+        trip_destinations.pop(conversation_id, None)
+
+    return jsonify({
+        "status": "success",
+        "message": "Conversation memory cleared!"
+    })
+
 
 if __name__ == '__main__':
     print("[SANCHARA] BMTC transit server booting on http://127.0.0.1:5000 ...")

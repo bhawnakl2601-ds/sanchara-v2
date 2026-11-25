@@ -7,7 +7,7 @@ const chatInput = document.getElementById("chat-input");
 const chatMessages = document.getElementById("chat-messages");
 
 // API URL
-const API_URL = "http://127.0.0.1:5000/api";
+const API_URL = "/api";
 
 // Retrieve existing conversation ID
 let conversationId = sessionStorage.getItem("sanchara_conversation_id");
